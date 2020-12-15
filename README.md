@@ -18,4 +18,9 @@ Having lived in California since the early 80s, I was curious to analyze the his
 
 * Several of the 74 columns contained data that was not useful to my analysis. For example, police officer codes
 * My analysis of the 20 year automobile collision trends led me to use a few columns heavily: killed_victims, cellphone_use, latitude, longitude, male/female, alcohol_involved
+* Using the latitude and longitude columns, I produced a heatmap to visually look at where the majority of the collisions occurred in the last 20 years. Out of 9.17 million rows, only 2.52 million had data. 
+* San Francisco county is the highest in density in the state of California. Orange and Los Angeles follow as second and third. It makes sense that the highest density locations is where the heat map is most red, representing higher number of collisions.
 
+    ![picture](images/heat_map.png)
+
+*test
