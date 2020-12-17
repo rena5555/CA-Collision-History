@@ -13,8 +13,6 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
     2. parties: Contains ~18Million rows, columns include age, sex, and sobriety
     3. victims: Contains ~9.17 Million rows, contains information about the injuries of specific people involved in the collision.
 
-## Exploratory Data Analysis
-
 * My analysis led me to use a few columns heavily: killed_victims, cellphone_use, latitude, longitude, male/female, alcohol_involved
 
 * Using the latitude and longitude columns, I produced a heatmap to visually look at where the majority of the collisions occurred in the last 20 years. Out of 9.17 million rows, only 2.52 million had data. 
@@ -77,7 +75,7 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
 
 ## Resources
 
-[CA 2001-2020 Traffic Collisions Database](https://www.kaggle.com/alexgudecalifornia-traffic-collision-data-from-switrs)
+[CA 2001-2020 Traffic Collisions Database](https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs)
 
 [CDC California 2018 Collision Death Costs](https://www.cdc.gov/transportationsafety/pdf/statecosts/2020/CDC-Cost-of-Crash-Deaths-Fact-Sheets_California.pdf))
 
@@ -85,8 +83,7 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
 
 [CA Population Statistics](https://www.statista.com/statistics/206097/resident-population-in-california/)
 
-[CA Unemployment Rate History]
-(https://fred.stlouisfed.org/series/CAUR)
+[CA Unemployment Rate History](https://fred.stlouisfed.org/series/CAUR)
 
 
 
