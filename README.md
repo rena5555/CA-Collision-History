@@ -1,19 +1,17 @@
 # Data Analysis - California Collision History 2001-2020
 
 ## Motivation 
-According to the [CDC](https://www.cdc.gov/injury/features/global-road-safety/index.html), road crashes are a leading cause of death in the United States for people aged 1-54. It is estimated that fatal and nonfatal crash injuries will cost the world economy approximately $1.8 trillion dollars from 2015-2030(.12% of global GDP). 
-
-Having lived in California since the early 80s, I was curious to analyze the historical automobile collision trends in California. This data will be valuable to federal, state and local governments to plan public policy and create local/state laws around driving. Information from the dataset can also be used to police traffic. These methods can be helpful in reducing the $1.8 trillion dollar cost of fatal and nonfatal crash injuries.
+According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2020/CDC-Cost-of-Crash-Deaths-Fact-Sheets_California.pdf), traffic collision deaths cost $5.83 billion in 2018. Since 2001, 35,385 people have died in CA due to automobile collisions[California Highway Patrol Data Set]((https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs)). Analyzing the historical automobile collision trends in California provides me with useful data to present to state and local governments. This data can be used to plan trafffic policy and create local or state traffic laws around driving. Information from the dataset can also be used to rightsize CHP staffing. The ultimate goal is to reduce deaths and cost of collisions.
 
 ## Exploratory Data Analysis
 
-* This dataset comes from the California Highway Patrol [CHP Data Set](https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs). It covers collisions from Jan 1,2001 to October 2020.  
+* This dataset comes from the [California Highway Patrol Data Set](https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs). It covers collisions from Jan 1,2001 to October 2020.  
 
 * There are 3 main tables. The collisions table has 74 columns, parties table has 31 columns and victims table has 11 columns.
 
-    1. collisions: Contains ~9.17 Million rows.Contains information about the collision, where it happened, what vehicles were involved. 9.17 Million rows
-    2. parties: Contains ~18Million rows. Contains information about the groups people involved in the collision including age, sex, and sobriety.
-    3. victims: Contains ~9.17 Million rows. Has information about the injuries of specific people involved in the collision.
+    1. collisions: Contains ~9.17 Million rows, data about the collision, location, what vehicles were involved, officer data
+    2. parties: Contains ~18Million rows, columns include age, sex, and sobriety
+    3. victims: Contains ~9.17 Million rows, contains information about the injuries of specific people involved in the collision.
 
 ## Exploratory Data Analysis
 
@@ -24,10 +22,17 @@ Having lived in California since the early 80s, I was curious to analyze the his
 
     ![picture](images/heat_map_2.png)
 
-    * San Francisco county is the highest in density in the state of California. Orange and Los Angeles follow as second and third. It makes sense that the highest density locations is where the heat map is most red, representing higher number of collisions.
+    * San Francisco county is the highest in density in the state of California. Orange and Los Angeles follow as second and third. It makes sense that the highest density locations is where the heat map is most red, representing higher number of collisions. Local governments should consider adjusting traffic policy and implementation based on the occurrence of the areas of high collisions.
 
-* 86% of the total collisions in the dataset are automobile accidents. The rest of the collisions are
-bicycle, motorcycle, pedestrian, and truck collisions.
+* Analyzing the dataset I found that 30% of all victim deaths were due to at fault collisions where the driver had been drinking alcohol. I was curious to see the age and gender distribution.
+
+    ![picture](images/alcohol_mf.png)
+
+        * Looking at this chart, it is interesting to note the much higher number of alcohol related collisions involving young males and the significantly lower number involving females of all ages. The state of California and local governments can use this information to target a specific audience, in this case young males, on the dangers of drinking and driving and implement more strict policies.
+
+
+
+* 86% of the total collisions in the dataset are automobile accidents. The rest of the collisions are bicycle, motorcycle, pedestrian, and truck collisions.
 
 * Here is a closer look at the automobile collision history. Having normalized for population, the below graph shows the crashes per 1000 people over the course of 20 years.
 
@@ -45,13 +50,45 @@ bicycle, motorcycle, pedestrian, and truck collisions.
 
 * The unemployment rate went up from 2007 to 2010 due to the Great Recession. It was the worst and longest standing financial crisis in the United States since the 1929 Depression. Subprime mortgage was the trigger. 
 
-* In July 2008, [California State Bill 28](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4001674/ ) went into effect. It banned the use of cell phones for texting while driving a motor vehicle.
+* In July 2008, [CA Senate Bill 1613](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4001674/ ) went into effect. It banned the use of cell phones for hand held conversations while driving. In Jan 2009 texting ban was added.
 
-* In future research, I would explore these factors that may correlate somewhat to a drop in collisions
-    1. Stricter California vehicle stafety standards
+    ![picture](images/collision_cellphone.png)
+
+       
+## Hypothesis
+
+* I used the Fisher exact test in my hypothesis testing because it is used for binary testing, it is applicable in two situations. I wanted to test whether there is an association between automobile collisions and other variable data within my dataset or whether the variables are independent.
+
+1. Does the CA bill reduce cell phone related collisions?
+    *   Null: Rate of crashes involving cell phone use is not lower after the CA bill is passed
+    *   Alternate: rate of automobile crashes involving cell phone use is lower after the CA   bill is passed
+    *   Performing the Fisher Exact test gives a p value of 2.89e-243. With a .05 alpha, I can confidently say that there is enough evidence to state that the rate of automobile crashes involving cell phone use is lower after the CA bill is passed.
+    
+    Gvernment policies can make a difference. 
+
+## Future Directions
+
+* In future research, I would explore other parts of this vast data set, such as the affect of weather on collisions and the victims table.
+* In addition, there are other factors that would be interesting to look at and do statistical testing on:
+    1. Immproved vehicle stafety standards
     2. Smarter cars - sensors, AEB(automatic emergency braking)
-    3. Driver distratcion related accidents(such as weather)
-    4. Increase in carpooling or using buses and trains
+    3. Driver distraction related accidents
+    4. Increase in carpooling 
+
+## Resources
+
+[CA 2001-2020 Traffic Collisions Database](https://www.kaggle.com/alexgudecalifornia-traffic-collision-data-from-switrs)
+
+[CDC California 2018 Collision Death Costs](https://www.cdc.gov/transportationsafety/pdf/statecosts/2020/CDC-Cost-of-Crash-Deaths-Fact-Sheets_California.pdf))
+
+[CA Senate Bill 1613](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4001674/ )
+
+[CA Population Statistics](https://www.statista.com/statistics/206097/resident-population-in-california/)
+
+[CA Unemployment Rate History]
+(https://fred.stlouisfed.org/series/CAUR)
+
+
 
             
             
