@@ -26,7 +26,7 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
 
     ![picture](images/alcohol_mf.png)
 
-        * Looking at this chart, it is interesting to note the much higher number of alcohol related collisions involving young males and the significantly lower number involving females of all ages. The state of California and local governments can use this information to target a specific audience, in this case young males, on the dangers of drinking and driving and implement more strict policies.
+* Looking at this chart, it is interesting to note the much higher number of alcohol related collisions involving young males and the significantly lower number involving females of all ages. The state of California and local governments can use this information to target a specific audience, in this case young males, on the dangers of drinking and driving and implement more strict policies.
 
 
 
