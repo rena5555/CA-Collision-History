@@ -1,9 +1,12 @@
 # Data Analysis - California Collision History 2001-2020
 
 ## Motivation 
-According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2020/CDC-Cost-of-Crash-Deaths-Fact-Sheets_California.pdf), in 2018 traffic collision deaths cost the state of California $5.83 billion. Since 2001, 35,385 people have died in CA due to automobile collisions. Analyzing the historical automobile collision trends in California provides me with useful data to present to state and local governments. This data can be used to plan trafffic policy and create local or state traffic laws around driving. Information from the dataset can also be used to rightsize CHP staffing. The ultimate goal is to reduce deaths and cost of collisions.
+According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2020/CDC-Cost-of-Crash-Deaths-Fact-Sheets_California.pdf), in 2018 traffic collision deaths cost the state of California $5.83 billion. Since 2001, 35,385 people have died in CA due to automobile collisions. Analyzing the historical automobile collision trends in California provides me with useful data to present to state and local governments. This data can be used to plan trafffic policy and create local or state traffic laws around driving. Information from the dataset can also be used to rightsize CHP staffing. The ultimate goal is to investigate x reduce deaths and cost of collisions.
 
-## Exploratory Data Analysis
+#add bolds in markdown, 
+
+
+## Data
 
 * This dataset comes from the [California Highway Patrol Data Set](https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs). It covers collisions from Jan 1,2001 to October 2020.  
 
@@ -14,6 +17,8 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
     3. victims: Contains ~9.17 Million rows, contains information about the injuries of specific people involved in the collision.
 
 * My analysis led me to use a few columns heavily: killed_victims, cellphone_use, latitude, longitude, male/female, alcohol_involved
+
+## Exploratory Data Analysis
 
 * Using the latitude and longitude columns, I produced a heatmap to visually look at where the majority of the collisions occurred in the last 20 years. Out of 9.17 million rows, only 2.52 million had data. 
 
@@ -59,7 +64,7 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
 
 ## Future Directions
 
-* In future research, I would explore other parts of this vast data set, such as the affect of weather on collisions and the victims table.
+* In future research, I would explore other parts of this data set and look at the victims column.
 * In addition, there are other factors that would be interesting to look at and do statistical testing on:
     1. Immproved vehicle stafety standards
     2. Smarter cars - sensors, AEB(automatic emergency braking)
@@ -70,7 +75,7 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
 
 [CA 2001-2020 Traffic Collisions Database](https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs)
 
-[CDC California 2018 Collision Death Costs](https://www.cdc.gov/transportationsafety/pdf/statecosts/2020/CDC-Cost-of-Crash-Deaths-Fact-Sheets_California.pdf))
+[CDC California 2018 Collision Death Costs](https://www.cdc.gov/transportationsafety/pdf/statecosts/2020/CDC-Cost-of-Crash-Deaths-Fact-Sheets_California.pdf)
 
 [CA Senate Bill 1613](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4001674/ )
 
