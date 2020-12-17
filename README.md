@@ -1,7 +1,7 @@
 # Data Analysis - California Collision History 2001-2020
 
 ## Motivation 
-According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2020/CDC-Cost-of-Crash-Deaths-Fact-Sheets_California.pdf), traffic collision deaths cost $5.83 billion in 2018. Since 2001, 35,385 people have died in CA due to automobile collisions[California Highway Patrol Data Set]((https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs)). Analyzing the historical automobile collision trends in California provides me with useful data to present to state and local governments. This data can be used to plan trafffic policy and create local or state traffic laws around driving. Information from the dataset can also be used to rightsize CHP staffing. The ultimate goal is to reduce deaths and cost of collisions.
+According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2020/CDC-Cost-of-Crash-Deaths-Fact-Sheets_California.pdf), in 2018 traffic collision deaths cost the state of California $5.83 billion. Since 2001, 35,385 people have died in CA due to automobile collisions[California Highway Patrol Data Set]((https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs)). Analyzing the historical automobile collision trends in California provides me with useful data to present to state and local governments. This data can be used to plan trafffic policy and create local or state traffic laws around driving. Information from the dataset can also be used to rightsize CHP staffing. The ultimate goal is to reduce deaths and cost of collisions.
 
 ## Exploratory Data Analysis
 
