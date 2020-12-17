@@ -22,13 +22,6 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
 
     * San Francisco county is the highest in density in the state of California. Orange and Los Angeles follow as second and third. It makes sense that the highest density locations is where the heat map is most red, representing higher number of collisions. Local governments should consider adjusting traffic policy and implementation based on the occurrence of the areas of high collisions.
 
-* Analyzing the dataset I found that 30% of all victim deaths were due to at fault collisions where the driver had been drinking alcohol. I was curious to see the age and gender distribution.
-
-    ![picture](images/alcohol_mf.png)
-
-* Looking at this chart, it is interesting to note the much higher number of alcohol related collisions involving young males and the significantly lower number involving females of all ages. The state of California and local governments can use this information to target a specific audience, in this case young males, on the dangers of drinking and driving and implement more strict policies.
-
-
 
 * 86% of the total collisions in the dataset are automobile accidents. The rest of the collisions are bicycle, motorcycle, pedestrian, and truck collisions.
 
