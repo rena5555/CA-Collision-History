@@ -20,7 +20,6 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
 
 * Using the latitude and longitude columns, I produced a heatmap to visually look at where the majority of the collisions occurred in the last 20 years. Out of 9.17 million rows, only 2.52 million had data. 
 
-
     ![picture](images/heat_map_2.png)
 
     * San Francisco county is the highest in density in the state of California. Orange and Los Angeles follow as second and third. It makes sense that the highest density locations is where the heat map is most red, representing higher number of collisions. Local governments should consider adjusting traffic policy and implementation based on the occurrence of the areas of high collisions.
