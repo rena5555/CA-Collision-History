@@ -65,7 +65,7 @@ Looking at the CHP dataset we found a correlation between unemployment rate% and
 ## Future Research
 
 * I’d like to explore the data more deeply and incorporate the following data points in the future:
-    1. Improved **vehicle stafety** standards
+    1. **Improved vehicle stafety** standards
     2. **Smarter cars** - sensors, AEB(automatic emergency braking)
     3. **Driver distraction** related accidents
     4. **Carpool** trends
