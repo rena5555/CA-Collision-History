@@ -60,7 +60,7 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
 
 ## Conclusion
 
-Looking at the CHP dataset we found a correlation between unemployment rate% and crashes and rate of automobile crashes involving cell phone use being lower after the CA Senate Bill 1613. We can see that socioeconomic events and government policies can have a correlation with automobile collisions.
+Looking at the CHP dataset we found a correlation between unemployment rate percentage and crashes and rate of automobile crashes involving cell phone use being lower after the CA Senate Bill 1613. We can see that socioeconomic events and government policies can have a correlation with automobile collisions. This analysis is valuable information for local and state governments to cplan trafffic policy, create local or state traffic laws, and rightsize CHP staffing.
 
 ## Future Research
 
