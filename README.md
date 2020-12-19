@@ -1,20 +1,18 @@
 # Data Analysis - California Collision History 2001-2020
 
 ## Motivation 
-According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2020/CDC-Cost-of-Crash-Deaths-Fact-Sheets_California.pdf), in 2018 traffic collision deaths cost the state of California $5.83 billion. Since 2001, 35,385 people have died in CA due to automobile collisions. Analyzing the historical automobile collision trends in California provides me with useful data to present to state and local governments. This data can be used to plan trafffic policy and create local or state traffic laws around driving. Information from the dataset can also be used to rightsize CHP staffing. The ultimate goal is to investigate x reduce deaths and cost of collisions.
-
-#add bolds in markdown, 
+According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2020/CDC-Cost-of-Crash-Deaths-Fact-Sheets_California.pdf), in 2018 traffic collision deaths cost the state of California $5.83 billion. Furthermore, since 2001, 35,385 people have died in CA due to automobile collisions. I felt that by analyzing the historical automobile collision trends and correlating them to outside factors can provide useful data to state and local governments. This data can be used to plan trafffic policy, create local or state traffic laws, and rightsize CHP staffing. My objective is to examine this dataset and give an insight into what factors might influence collisions.
 
 
 ## Data
 
-* This dataset comes from the [California Highway Patrol Data Set](https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs). It covers collisions from Jan 1,2001 to October 2020.  
+* This data comes from the [California Highway Patrol Data Set](https://www.kaggle.com/alexgude/california-traffic-collision-data-from-switrs). It covers collisions from Jan 1,2001 to October 2020.  
 
 * There are 3 main tables. The collisions table has 74 columns, parties table has 31 columns and victims table has 11 columns.
 
-    1. collisions: Contains ~9.17 Million rows, data about the collision, location, what vehicles were involved, officer data
-    2. parties: Contains ~18Million rows, columns include age, sex, and sobriety
-    3. victims: Contains ~9.17 Million rows, contains information about the injuries of specific people involved in the collision.
+    1. **collisions**: Contains ~9.17 Million rows, data about the collision, location, what vehicles were involved, officer data
+    2. **parties**: Contains ~18Million rows, columns include age, sex, and sobriety
+    3. **victims**: Contains ~9.17 Million rows, contains information about the injuries of specific people involved in the collision.
 
 * My analysis led me to use a few columns heavily: killed_victims, cellphone_use, latitude, longitude, male/female, alcohol_involved
 
@@ -28,7 +26,7 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
     * San Francisco county is the highest in density in the state of California. Orange and Los Angeles follow as second and third. It makes sense that the highest density locations is where the heat map is most red, representing higher number of collisions. Local governments should consider adjusting traffic policy and implementation based on the occurrence of the areas of high collisions.
 
 
-* 86% of the total collisions in the dataset are automobile accidents. The rest of the collisions are bicycle, motorcycle, pedestrian, and truck collisions.
+* **86%** of the total collisions in the dataset are automobile accidents. The rest of the collisions are bicycle, motorcycle, pedestrian, and truck collisions.
 
 * Here is a closer look at the automobile collision history. Having normalized for population, the below graph shows the crashes per 1000 people over the course of 20 years.
 
@@ -42,9 +40,9 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
 
     ![picture](images/collision_unemp.png)
     
-* The Pearson R correlation is -0.57. There is a moderately inverse correlation between unemployment rate % and crashes per 1000 people. This makes sense because crashes will drop when less people are driving to work.
+* The Pearson R correlation is  **-0.57**. There is a moderately inverse correlation between unemployment rate % and crashes per 1000 people. This makes sense because crashes will drop when less people are driving to work.
 
-* The unemployment rate went up from 2007 to 2010 due to the Great Recession. It was the worst and longest standing financial crisis in the United States since the 1929 Depression. Subprime mortgage was the trigger. 
+* The unemployment rate went up from 2007 to 2010 due to the **Great Recession.** It was the worst and longest standing financial crisis in the United States since the 1929 Depression. Subprime mortgage was the trigger. 
 
 * In July 2008, [CA Senate Bill 1613](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4001674/ ) went into effect. It banned the use of cell phones for hand held conversations while driving. In Jan 2009 texting ban was added.
 
@@ -53,20 +51,20 @@ According to the [CDC](https://www.cdc.gov/transportationsafety/pdf/statecosts/2
        
 ## Hypothesis
 
-* I used the Fisher exact test in my hypothesis testing because it is used for binary testing, it is applicable in two situations. I wanted to test whether there is an association between automobile collisions and other variable data within my dataset or whether the variables are independent.
+* I used the **Fisher exact test** in my hypothesis testing because it is used for binary testing, it is applicable in two situations. I wanted to test whether there is an association between automobile collisions and cell phone involved collisions within my dataset or whether these are independent.
 
-1. Does the CA bill reduce cell phone related collisions?
-    *   Null: Rate of crashes involving cell phone use is not lower after the CA bill is passed
-    *   Alternate: rate of automobile crashes involving cell phone use is lower after the CA   bill is passed
+1. **Does the CA bill reduce cell phone related collisions?**
+    *   **Null**: Rate of crashes involving cell phone use is not lower after the CA bill is passed
+    *   **Alternate**: rate of automobile crashes involving cell phone use is lower after the CA   bill is passed
     *   Performing the Fisher Exact test gives a p value of 2.89e-243. With a .05 alpha, I can confidently say that there is enough evidence to state that the rate of automobile crashes involving cell phone use is lower after the CA bill is passed.
     
-    Gvernment policies can make a difference. 
+    **Government policies can make a difference.** 
 
 ## Future Directions
 
 * In future research, I would explore other parts of this data set and look at the victims column.
 * In addition, there are other factors that would be interesting to look at and do statistical testing on:
-    1. Immproved vehicle stafety standards
+    1. Improved vehicle stafety standards
     2. Smarter cars - sensors, AEB(automatic emergency braking)
     3. Driver distraction related accidents
     4. Increase in carpooling 
